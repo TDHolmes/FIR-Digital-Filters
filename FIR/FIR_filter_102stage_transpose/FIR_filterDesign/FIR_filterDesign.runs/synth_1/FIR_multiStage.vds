@@ -1,0 +1,1093 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Nov 06 10:24:48 2015
+# Process ID: 5540
+# Log file: U:/FIR_filter_102stage_transpose/FIR_filterDesign/FIR_filterDesign.runs/synth_1/FIR_multiStage.vds
+# Journal file: U:/FIR_filter_102stage_transpose/FIR_filterDesign/FIR_filterDesign.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FIR_multiStage.tcl -notrace
+Command: synth_design -top FIR_multiStage -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 264.680 ; gain = 86.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FIR_multiStage' [U:/FIR_filter_102stage_transpose/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_multiStage.v:23]
+	Parameter DWIDTH bound to: 16 - type: integer 
+	Parameter STAGES bound to: 102 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FIR_block' [U:/FIR_filter_102stage_transpose/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_block.v:23]
+	Parameter DWIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FIR_block' (1#1) [U:/FIR_filter_102stage_transpose/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_block.v:23]
+INFO: [Synth 8-256] done synthesizing module 'FIR_multiStage' (2#1) [U:/FIR_filter_102stage_transpose/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_multiStage.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 298.953 ; gain = 120.563
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 298.953 ; gain = 120.563
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [U:/FIR_filter_102stage_transpose/FIR_filterDesign/FIR_filterDesign.srcs/constrs_1/new/myconstraint.xdc]
+Finished Parsing XDC File [U:/FIR_filter_102stage_transpose/FIR_filterDesign/FIR_filterDesign.srcs/constrs_1/new/myconstraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 634.992 ; gain = 0.047
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 634.992 ; gain = 456.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 634.992 ; gain = 456.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 634.992 ; gain = 456.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 634.992 ; gain = 456.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 102   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 204   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FIR_block 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 634.992 ; gain = 456.602
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+DSP Report: Generating DSP b_out1, operation Mode is: A*B.
+DSP Report: operator b_out1 is absorbed into DSP b_out1.
+DSP Report: Generating DSP b_out0, operation Mode is: C+A*B.
+DSP Report: operator b_out0 is absorbed into DSP b_out0.
+DSP Report: operator b_out1 is absorbed into DSP b_out0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 634.992 ; gain = 456.602
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 634.992 ; gain = 456.602
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP:
++------------+-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
+|FIR_block   | A*B         | No           | 16     | 16     | 48     | 25     | 32     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|FIR_block   | C+A*B       | No           | 16     | 16     | 32     | 25     | 32     | 0    | 0    | 0    | 1    | 1     | 0    | 0    | 
++------------+-------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 634.992 ; gain = 456.602
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 634.992 ; gain = 456.602
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 634.992 ; gain = 456.602
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 659.836 ; gain = 481.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 706.477 ; gain = 528.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 760.105 ; gain = 581.715
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:01:01 . Memory (MB): peak = 767.598 ; gain = 589.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 767.598 ; gain = 589.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 767.598 ; gain = 589.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 767.598 ; gain = 589.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 767.598 ; gain = 589.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |DSP48E1   |   102|
+|3     |DSP48E1_1 |   102|
+|4     |LUT2      |  6528|
+|5     |LUT3      |  3264|
+|6     |FDCE      |  3264|
+|7     |FDPE      |  3264|
+|8     |LDC       |  3264|
+|9     |IBUF      |  1650|
+|10    |OBUF      |    32|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------+--------------+------+
+|      |Instance           |Module        |Cells |
++------+-------------------+--------------+------+
+|1     |top                |              | 21471|
+|2     |  U                |FIR_block     |   194|
+|3     |  \genblk1[100].U  |FIR_block_0   |   194|
+|4     |  \genblk1[101].U  |FIR_block_1   |   194|
+|5     |  \genblk1[10].U   |FIR_block_2   |   194|
+|6     |  \genblk1[11].U   |FIR_block_3   |   194|
+|7     |  \genblk1[12].U   |FIR_block_4   |   194|
+|8     |  \genblk1[13].U   |FIR_block_5   |   194|
+|9     |  \genblk1[14].U   |FIR_block_6   |   194|
+|10    |  \genblk1[15].U   |FIR_block_7   |   194|
+|11    |  \genblk1[16].U   |FIR_block_8   |   194|
+|12    |  \genblk1[17].U   |FIR_block_9   |   194|
+|13    |  \genblk1[18].U   |FIR_block_10  |   194|
+|14    |  \genblk1[19].U   |FIR_block_11  |   194|
+|15    |  \genblk1[1].U    |FIR_block_12  |   194|
+|16    |  \genblk1[20].U   |FIR_block_13  |   194|
+|17    |  \genblk1[21].U   |FIR_block_14  |   194|
+|18    |  \genblk1[22].U   |FIR_block_15  |   194|
+|19    |  \genblk1[23].U   |FIR_block_16  |   194|
+|20    |  \genblk1[24].U   |FIR_block_17  |   194|
+|21    |  \genblk1[25].U   |FIR_block_18  |   194|
+|22    |  \genblk1[26].U   |FIR_block_19  |   194|
+|23    |  \genblk1[27].U   |FIR_block_20  |   194|
+|24    |  \genblk1[28].U   |FIR_block_21  |   194|
+|25    |  \genblk1[29].U   |FIR_block_22  |   194|
+|26    |  \genblk1[2].U    |FIR_block_23  |   194|
+|27    |  \genblk1[30].U   |FIR_block_24  |   194|
+|28    |  \genblk1[31].U   |FIR_block_25  |   194|
+|29    |  \genblk1[32].U   |FIR_block_26  |   194|
+|30    |  \genblk1[33].U   |FIR_block_27  |   194|
+|31    |  \genblk1[34].U   |FIR_block_28  |   194|
+|32    |  \genblk1[35].U   |FIR_block_29  |   194|
+|33    |  \genblk1[36].U   |FIR_block_30  |   194|
+|34    |  \genblk1[37].U   |FIR_block_31  |   194|
+|35    |  \genblk1[38].U   |FIR_block_32  |   194|
+|36    |  \genblk1[39].U   |FIR_block_33  |   194|
+|37    |  \genblk1[3].U    |FIR_block_34  |   194|
+|38    |  \genblk1[40].U   |FIR_block_35  |   194|
+|39    |  \genblk1[41].U   |FIR_block_36  |   194|
+|40    |  \genblk1[42].U   |FIR_block_37  |   194|
+|41    |  \genblk1[43].U   |FIR_block_38  |   194|
+|42    |  \genblk1[44].U   |FIR_block_39  |   194|
+|43    |  \genblk1[45].U   |FIR_block_40  |   194|
+|44    |  \genblk1[46].U   |FIR_block_41  |   194|
+|45    |  \genblk1[47].U   |FIR_block_42  |   194|
+|46    |  \genblk1[48].U   |FIR_block_43  |   194|
+|47    |  \genblk1[49].U   |FIR_block_44  |   194|
+|48    |  \genblk1[4].U    |FIR_block_45  |   194|
+|49    |  \genblk1[50].U   |FIR_block_46  |   194|
+|50    |  \genblk1[51].U   |FIR_block_47  |   194|
+|51    |  \genblk1[52].U   |FIR_block_48  |   194|
+|52    |  \genblk1[53].U   |FIR_block_49  |   194|
+|53    |  \genblk1[54].U   |FIR_block_50  |   194|
+|54    |  \genblk1[55].U   |FIR_block_51  |   194|
+|55    |  \genblk1[56].U   |FIR_block_52  |   194|
+|56    |  \genblk1[57].U   |FIR_block_53  |   194|
+|57    |  \genblk1[58].U   |FIR_block_54  |   194|
+|58    |  \genblk1[59].U   |FIR_block_55  |   194|
+|59    |  \genblk1[5].U    |FIR_block_56  |   194|
+|60    |  \genblk1[60].U   |FIR_block_57  |   194|
+|61    |  \genblk1[61].U   |FIR_block_58  |   194|
+|62    |  \genblk1[62].U   |FIR_block_59  |   194|
+|63    |  \genblk1[63].U   |FIR_block_60  |   194|
+|64    |  \genblk1[64].U   |FIR_block_61  |   194|
+|65    |  \genblk1[65].U   |FIR_block_62  |   194|
+|66    |  \genblk1[66].U   |FIR_block_63  |   194|
+|67    |  \genblk1[67].U   |FIR_block_64  |   194|
+|68    |  \genblk1[68].U   |FIR_block_65  |   194|
+|69    |  \genblk1[69].U   |FIR_block_66  |   194|
+|70    |  \genblk1[6].U    |FIR_block_67  |   194|
+|71    |  \genblk1[70].U   |FIR_block_68  |   194|
+|72    |  \genblk1[71].U   |FIR_block_69  |   194|
+|73    |  \genblk1[72].U   |FIR_block_70  |   194|
+|74    |  \genblk1[73].U   |FIR_block_71  |   194|
+|75    |  \genblk1[74].U   |FIR_block_72  |   194|
+|76    |  \genblk1[75].U   |FIR_block_73  |   194|
+|77    |  \genblk1[76].U   |FIR_block_74  |   194|
+|78    |  \genblk1[77].U   |FIR_block_75  |   194|
+|79    |  \genblk1[78].U   |FIR_block_76  |   194|
+|80    |  \genblk1[79].U   |FIR_block_77  |   194|
+|81    |  \genblk1[7].U    |FIR_block_78  |   194|
+|82    |  \genblk1[80].U   |FIR_block_79  |   194|
+|83    |  \genblk1[81].U   |FIR_block_80  |   194|
+|84    |  \genblk1[82].U   |FIR_block_81  |   194|
+|85    |  \genblk1[83].U   |FIR_block_82  |   194|
+|86    |  \genblk1[84].U   |FIR_block_83  |   194|
+|87    |  \genblk1[85].U   |FIR_block_84  |   194|
+|88    |  \genblk1[86].U   |FIR_block_85  |   194|
+|89    |  \genblk1[87].U   |FIR_block_86  |   194|
+|90    |  \genblk1[88].U   |FIR_block_87  |   194|
+|91    |  \genblk1[89].U   |FIR_block_88  |   194|
+|92    |  \genblk1[8].U    |FIR_block_89  |   194|
+|93    |  \genblk1[90].U   |FIR_block_90  |   194|
+|94    |  \genblk1[91].U   |FIR_block_91  |   194|
+|95    |  \genblk1[92].U   |FIR_block_92  |   194|
+|96    |  \genblk1[93].U   |FIR_block_93  |   194|
+|97    |  \genblk1[94].U   |FIR_block_94  |   194|
+|98    |  \genblk1[95].U   |FIR_block_95  |   194|
+|99    |  \genblk1[96].U   |FIR_block_96  |   194|
+|100   |  \genblk1[97].U   |FIR_block_97  |   194|
+|101   |  \genblk1[98].U   |FIR_block_98  |   194|
+|102   |  \genblk1[99].U   |FIR_block_99  |   194|
+|103   |  \genblk1[9].U    |FIR_block_100 |   194|
++------+-------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 767.598 ; gain = 589.207
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:00:59 . Memory (MB): peak = 767.598 ; gain = 217.656
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 767.598 ; gain = 589.207
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5118 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3264 instances were transformed.
+  LDC => LDCE: 3264 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+15 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:11 . Memory (MB): peak = 767.598 ; gain = 557.051
+write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 767.598 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.312 . Memory (MB): peak = 767.598 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 06 10:26:08 2015...

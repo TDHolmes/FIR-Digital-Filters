@@ -1,0 +1,637 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Nov 05 10:56:59 2015
+# Process ID: 5444
+# Log file: U:/FIR_filter_102stage/FIR_filterDesign/vivado.log
+# Journal file: U:/FIR_filter_102stage/FIR_filterDesign\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.xpr
+INFO: [Project 1-313] Project file moved from 'U:/FIR_filter/FIR_filterDesign' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+remove_files U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/mySAMPLEMem.v
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_block.v" into library work [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_block.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_multiStage.v" into library work [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_multiStage.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/mySAMPLEMem_PART2.v" into library work [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/mySAMPLEMem_PART2.v:1]
+[Thu Nov 05 11:03:09 2015] Launched synth_1...
+Run output will be captured here: U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 86 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/constrs_1/new/myconstraint.xdc]
+Finished Parsing XDC File [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/constrs_1/new/myconstraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1119.426 ; gain = 316.355
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FIR_multiStage' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_FIR_multiStage_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/mySAMPLEMem_PART2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mySAMPLEMem_PART2
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_multiStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_multiStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_FIR_multiStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 57cba22a797d4b58adbfdffe06ddf03d --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_FIR_multiStage_behav xil_defaultlib.tb_FIR_multiStage xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 64 differs from formal bit length 1632 for port COEFDATA [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v:25]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mySAMPLEMem_PART2
+Compiling module xil_defaultlib.FIR_block
+Compiling module xil_defaultlib.FIR_multiStage_default
+Compiling module xil_defaultlib.tb_FIR_multiStage
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_FIR_multiStage_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/xsim.dir/tb_FIR_multiStage_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2273062370 -regid "211065236_1777503585_210608250_626" -xml U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/si..."
+    (file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/xsim.dir/tb_FIR_multiStage_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 05 11:04:15 2015...
+run_program: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1483.090 ; gain = 316.684
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FIR_multiStage_behav -key {Behavioral:sim_1:Functional:tb_FIR_multiStage} -tclbatch {tb_FIR_multiStage.tcl} -view {U:/FIR_filter_102stage/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+open_wave_config U:/FIR_filter_102stage/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg
+source tb_FIR_multiStage.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FIR_multiStage_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1489.148 ; gain = 343.375
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 250 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1537.027 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FIR_multiStage' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_FIR_multiStage_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/mySAMPLEMem_PART2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mySAMPLEMem_PART2
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_multiStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_multiStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_FIR_multiStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 57cba22a797d4b58adbfdffe06ddf03d --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_FIR_multiStage_behav xil_defaultlib.tb_FIR_multiStage xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1632 differs from formal bit length 64 for port h_in [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mySAMPLEMem_PART2
+Compiling module xil_defaultlib.FIR_block
+Compiling module xil_defaultlib.FIR_multiStage_default
+Compiling module xil_defaultlib.tb_FIR_multiStage
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_FIR_multiStage_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/xsim.dir/tb_FIR_multiStage_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 321367039 -regid "211065236_1777503585_210608250_626" -xml U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim..."
+    (file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/xsim.dir/tb_FIR_multiStage_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 05 11:07:46 2015...
+run_program: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1537.027 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FIR_multiStage_behav -key {Behavioral:sim_1:Functional:tb_FIR_multiStage} -tclbatch {tb_FIR_multiStage.tcl} -view {U:/FIR_filter_102stage/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+open_wave_config U:/FIR_filter_102stage/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg
+source tb_FIR_multiStage.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1537.027 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FIR_multiStage_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1537.027 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1537.027 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FIR_multiStage' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_FIR_multiStage_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/mySAMPLEMem_PART2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mySAMPLEMem_PART2
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_FIR_multiStage
+ERROR: [VRFC 10-1412] syntax error near parameter [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v:28]
+ERROR: [VRFC 10-51] FIR_multiStage is an unknown type [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v:28]
+ERROR: [VRFC 10-1040] module tb_FIR_multiStage ignored due to previous errors [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v:5]
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_block.v" into library work [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_block.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_multiStage.v" into library work [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_multiStage.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/mySAMPLEMem_PART2.v" into library work [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/mySAMPLEMem_PART2.v:1]
+[Thu Nov 05 11:11:02 2015] Launched synth_1...
+Run output will be captured here: U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.runs/synth_1/runme.log
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 86 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/constrs_1/new/myconstraint.xdc]
+Finished Parsing XDC File [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/constrs_1/new/myconstraint.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FIR_multiStage' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_FIR_multiStage_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/mySAMPLEMem_PART2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mySAMPLEMem_PART2
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_multiStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_multiStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_FIR_multiStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 57cba22a797d4b58adbfdffe06ddf03d --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_FIR_multiStage_behav xil_defaultlib.tb_FIR_multiStage xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1632 differs from formal bit length 64 for port h_in [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mySAMPLEMem_PART2
+Compiling module xil_defaultlib.FIR_block
+Compiling module xil_defaultlib.FIR_multiStage_default
+Compiling module xil_defaultlib.tb_FIR_multiStage
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_FIR_multiStage_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/xsim.dir/tb_FIR_multiStage_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 633280335 -regid "211065236_1777503585_210608250_626" -xml U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim..."
+    (file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/xsim.dir/tb_FIR_multiStage_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 05 11:12:00 2015...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1537.027 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FIR_multiStage_behav -key {Behavioral:sim_1:Functional:tb_FIR_multiStage} -tclbatch {tb_FIR_multiStage.tcl} -view {U:/FIR_filter_102stage/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+open_wave_config U:/FIR_filter_102stage/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg
+source tb_FIR_multiStage.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FIR_multiStage_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1537.027 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 250 us
+save_wave_config {U:/FIR_filter_102stage/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FIR_multiStage' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_FIR_multiStage_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/mySAMPLEMem_PART2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mySAMPLEMem_PART2
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_multiStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_multiStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_FIR_multiStage
+WARNING: [VRFC 10-1581] illegal format specifier i for display [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v:44]
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 57cba22a797d4b58adbfdffe06ddf03d --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_FIR_multiStage_behav xil_defaultlib.tb_FIR_multiStage xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1632 differs from formal bit length 64 for port h_in [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mySAMPLEMem_PART2
+Compiling module xil_defaultlib.FIR_block
+Compiling module xil_defaultlib.FIR_multiStage_default
+Compiling module xil_defaultlib.tb_FIR_multiStage
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_FIR_multiStage_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/xsim.dir/tb_FIR_multiStage_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/xsim.dir/tb_FIR_multiStage_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Nov 05 11:18:11 2015. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 05 11:18:11 2015...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1548.148 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FIR_multiStage_behav -key {Behavioral:sim_1:Functional:tb_FIR_multiStage} -tclbatch {tb_FIR_multiStage.tcl} -view {U:/FIR_filter_102stage/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+open_wave_config U:/FIR_filter_102stage/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg
+source tb_FIR_multiStage.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+i          x
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FIR_multiStage_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1548.148 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 250 us
+i          x
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1548.148 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FIR_multiStage' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_FIR_multiStage_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/mySAMPLEMem_PART2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mySAMPLEMem_PART2
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_multiStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_multiStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_FIR_multiStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 57cba22a797d4b58adbfdffe06ddf03d --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_FIR_multiStage_behav xil_defaultlib.tb_FIR_multiStage xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1632 differs from formal bit length 64 for port h_in [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mySAMPLEMem_PART2
+Compiling module xil_defaultlib.FIR_block
+Compiling module xil_defaultlib.FIR_multiStage_default
+Compiling module xil_defaultlib.tb_FIR_multiStage
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_FIR_multiStage_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/xsim.dir/tb_FIR_multiStage_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 1976948014 -regid "211065236_1777503585_210608250_626" -xml U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/si..."
+    (file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/xsim.dir/tb_FIR_multiStage_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 05 11:19:23 2015...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1548.148 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FIR_multiStage_behav -key {Behavioral:sim_1:Functional:tb_FIR_multiStage} -tclbatch {tb_FIR_multiStage.tcl} -view {U:/FIR_filter_102stage/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+open_wave_config U:/FIR_filter_102stage/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg
+source tb_FIR_multiStage.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+          x
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FIR_multiStage_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1548.148 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 250 us
+          x
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1561.680 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FIR_multiStage' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_FIR_multiStage_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/mySAMPLEMem_PART2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mySAMPLEMem_PART2
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_multiStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_multiStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_FIR_multiStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 57cba22a797d4b58adbfdffe06ddf03d --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_FIR_multiStage_behav xil_defaultlib.tb_FIR_multiStage xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1632 differs from formal bit length 64 for port h_in [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mySAMPLEMem_PART2
+Compiling module xil_defaultlib.FIR_block
+Compiling module xil_defaultlib.FIR_multiStage_default
+Compiling module xil_defaultlib.tb_FIR_multiStage
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot tb_FIR_multiStage_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/xsim.dir/tb_FIR_multiStage_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3016997519 -regid "211065236_1777503585_210608250_626" -xml U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/si..."
+    (file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/xsim.dir/tb_FIR_multiStage_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 05 11:20:18 2015...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1561.680 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FIR_multiStage_behav -key {Behavioral:sim_1:Functional:tb_FIR_multiStage} -tclbatch {tb_FIR_multiStage.tcl} -view {U:/FIR_filter_102stage/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+open_wave_config U:/FIR_filter_102stage/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg
+source tb_FIR_multiStage.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+          0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FIR_multiStage_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 1561.680 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 250 us
+          0
+run 250 us
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_block.v" into library work [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_block.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_multiStage.v" into library work [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_multiStage.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/mySAMPLEMem_PART2.v" into library work [U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/mySAMPLEMem_PART2.v:1]
+[Thu Nov 05 11:25:31 2015] Launched synth_1...
+Run output will be captured here: U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1595.578 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_FIR_multiStage' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_FIR_multiStage_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/mySAMPLEMem_PART2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mySAMPLEMem_PART2
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sources_1/new/FIR_multiStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIR_multiStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.srcs/sim_1/imports/new/tb_FIR_multiStage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_FIR_multiStage
+INFO: [VRFC 10-2263] Analyzing Verilog file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 57cba22a797d4b58adbfdffe06ddf03d --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_FIR_multiStage_behav xil_defaultlib.tb_FIR_multiStage xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mySAMPLEMem_PART2
+Compiling module xil_defaultlib.FIR_block
+Compiling module xil_defaultlib.FIR_multiStage_default
+Compiling module xil_defaultlib.tb_FIR_multiStage
+Compiling module xil_defaultlib.glbl
+Waiting for 1 sub-compilation(s) to finish...
+Built simulation snapshot tb_FIR_multiStage_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/xsim.dir/tb_FIR_multiStage_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2138499441 -regid "211065236_1777503585_210608250_626" -xml U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/si..."
+    (file "U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav/xsim.dir/tb_FIR_multiStage_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 05 11:26:59 2015...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1595.578 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_FIR_multiStage_behav -key {Behavioral:sim_1:Functional:tb_FIR_multiStage} -tclbatch {tb_FIR_multiStage.tcl} -view {U:/FIR_filter_102stage/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+open_wave_config U:/FIR_filter_102stage/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg
+source tb_FIR_multiStage.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+          0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_FIR_multiStage_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1595.578 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 250 us
+          0
+save_wave_config {U:/FIR_filter_102stage/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1595.578 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 05 11:29:42 2015...

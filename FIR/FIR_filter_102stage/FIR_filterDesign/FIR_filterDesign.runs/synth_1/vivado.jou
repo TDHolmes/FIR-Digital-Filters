@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Nov 05 11:25:32 2015
+# Process ID: 8492
+# Log file: U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.runs/synth_1/FIR_multiStage.vds
+# Journal file: U:/FIR_filter_102stage/FIR_filterDesign/FIR_filterDesign.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FIR_multiStage.tcl -notrace

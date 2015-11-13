@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Nov 06 09:49:23 2015
+# Process ID: 5036
+# Log file: U:/FIR_filter_102stage_transpose/FIR_filterDesign/vivado.log
+# Journal file: U:/FIR_filter_102stage_transpose/FIR_filterDesign\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/FIR_filter_102stage_transpose/FIR_filterDesign/FIR_filterDesign.xpr
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+open_wave_config U:/FIR_filter_102stage_transpose/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg
+source tb_FIR_multiStage.tcl
+restart
+run 250 us
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+open_wave_config U:/FIR_filter_102stage_transpose/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg
+source tb_FIR_multiStage.tcl
+restart
+run 250 us
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+open_wave_config U:/FIR_filter_102stage_transpose/FIR_filterDesign/tb_FIR_multiStage_behav.wcfg
+source tb_FIR_multiStage.tcl
+restart
+run 250 us
+restart
+run 250 us
+close_design
+synth_design -rtl -name rtl_1
+close_sim

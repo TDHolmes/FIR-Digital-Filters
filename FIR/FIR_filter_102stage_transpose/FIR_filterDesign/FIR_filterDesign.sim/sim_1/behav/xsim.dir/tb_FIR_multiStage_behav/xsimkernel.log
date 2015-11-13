@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_FIR_multiStage_behav/xsimk.exe -simmode gui -wdb tb_FIR_multiStage_behav.wdb -simrunnum 0 -socket 51497
+Design successfully loaded
+Design Loading Memory Usage: 20300 KB (Peak: 20300 KB)
+Design Loading CPU Usage: 108 ms
+Simulation completed
+Simulation Memory Usage: 22632 KB (Peak: 22632 KB)
+Simulation CPU Usage: 420 ms

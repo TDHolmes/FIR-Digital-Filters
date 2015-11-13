@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_FIR_multiStage_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_FIR_multiStage" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject db_ref_id="1" fp_name="/tb_FIR_multiStage/B" type="array">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_FIR_multiStage/RESET" type="logic">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_FIR_multiStage/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_FIR_multiStage/ENABLE" type="logic">
+      <obj_property name="ElementShortName">ENABLE</obj_property>
+      <obj_property name="ObjectShortName">ENABLE</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_FIR_multiStage/A" type="array">
+      <obj_property name="ElementShortName">A[15:0]</obj_property>
+      <obj_property name="ObjectShortName">A[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_FIR_multiStage/Y" type="array">
+      <obj_property name="ElementShortName">Y[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[31:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_FIR_multiStage/MEM/DATA" type="array">
+      <obj_property name="ElementShortName">DATA[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_FIR_multiStage/A_OUT" type="array">
+      <obj_property name="ElementShortName">A_OUT[15:0]</obj_property>
+      <obj_property name="ObjectShortName">A_OUT[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_FIR_multiStage/COEFDATA" type="array">
+      <obj_property name="ElementShortName">COEFDATA[63:0]</obj_property>
+      <obj_property name="ObjectShortName">COEFDATA[63:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_FIR_multiStage/DWIDTH" type="array">
+      <obj_property name="ElementShortName">DWIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DWIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/tb_FIR_multiStage/STAGES" type="array">
+      <obj_property name="ElementShortName">STAGES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">STAGES[31:0]</obj_property>
+   </wvobject>
+</wave_config>

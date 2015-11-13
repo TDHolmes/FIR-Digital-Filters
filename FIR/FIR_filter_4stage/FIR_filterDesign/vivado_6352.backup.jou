@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Nov 05 10:27:20 2015
+# Process ID: 4848
+# Log file: U:/FIR_filter/FIR_filterDesign/vivado.log
+# Journal file: U:/FIR_filter/FIR_filterDesign\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project U:/FIR_filter/FIR_filterDesign/FIR_filterDesign.xpr
+launch_simulation
+launch_simulation
+source tb_FIR_multiStage.tcl
+restart
+run 250 ms
